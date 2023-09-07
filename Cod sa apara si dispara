@@ -1,0 +1,80 @@
+<style>
+    /* Stilurile pentru elementul text */
+    .ice-cream {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        color: #302F2F; /* Schimbăm culoarea textului */
+        transition: color 0.3s; /* Adăugăm o tranziție pentru culoarea textului */
+        font-family: Calistoga, sans-serif; /* Familia de fonturi */
+        font-size: 16px; /* Dimensiunea textului */
+    }
+
+    /* Stilurile pentru tabelul cu informații */
+    .info-table {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white; /* Schimbăm culoarea de fundal la alb */
+        padding: 10px;
+        border: 1px solid #000; /* Schimbăm culoarea bordurii la negru */
+        transition: opacity 0.3s; /* Adăugăm o tranziție pentru opacitate */
+        opacity: 0; /* Inițial, tabelul este invizibil */
+    }
+
+    /* Stilurile pentru tabelul cu informații când mouse-ul este deasupra elementului text */
+    .ice-cream:hover .info-table {
+        display: table; /* Afișăm tabelul când mouse-ul este deasupra */
+        opacity: 1; /* Facem tabelul vizibil */
+    }
+
+    /* Stiluri pentru tabel */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        color: #302F2F; /* Schimbăm culoarea textului în tabel */
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #000; /* Schimbăm culoarea fundalului celulelor antetului la negru */
+        color: white; /* Schimbăm culoarea textului antetului la alb */
+    }
+</style>
+
+<!-- Elementul text cu tabelul de informații -->
+<div class="ice-cream">
+    Ice-cream, Sensation
+    <div class="info-table">
+        <table>
+            <tbody>
+                <tr>
+                    <th><strong>Categorie</strong></th>
+                    <th><strong>Produs</strong></th>
+                </tr>
+                <tr>
+                    <td>Cod de bare</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Masa netă</td>
+                    <td>1 kg</td>
+                </tr>
+                <tr>
+                    <td>Grăsime</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Cantitatea în cutie</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
